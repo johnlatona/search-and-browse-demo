@@ -1,0 +1,43 @@
+{
+  "categories": 
+  {
+    "Home And Kitchen": 
+    [
+      {
+        "id": "25720342343",
+        "itemName": "Gotham Steel Stackable Pots and Pans Set",
+        "description": "Stackmaster 10 Piece Cookware Set with Ultra Nonstick Cast Texture Ceramic Coating - Dishwasher Safe",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81UIlxpRv4L._SL1500_.jpg",
+        "price": "$199.95",
+        "rating": 4
+      },
+      {
+        "id": "347234234262",
+        "itemName": "Cuisinart MCP-12N Multiclad Pro Stainless Stell 12-Piece Cookware Set",
+        "description": "",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/71DwqGSnhEL._SL1500_.jpg",
+        "price": "$197.95",
+        "rating": 5
+      }
+    ],
+    "Home Decor": 
+    [
+      {
+        "id": "23427491202",
+        "itemName": "NICETOWN Thermal Insulated Grommet Blackout Curtains for Bedroom",
+        "description": "(2 Panels, W42 x L63 -Inch,Grey",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/61IT197tn1L._SL1000_.jpg",
+        "price": "$17.97",
+        "rating": 4
+      },
+      {
+        "id": "67203452938",
+        "itemName": "Sullivans Small White Vase Set (Ceramic)",
+        "description": "Rustic Home Decor, Distressed White, Set of 3 Vases (CM2333)",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/61Z1-LEUuTL._SL1156_.jpg",
+        "price": "$17.97",
+        "rating": 3
+      }
+    ]
+  }
+}

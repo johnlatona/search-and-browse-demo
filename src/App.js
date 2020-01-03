@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SearchBar from './components/SearchBar';
+import Product from './components/Product';
+import Results from './components/Results';
+import { Provider } from 'react-redux';
+import { Router, Route, Switch } from 'react-router-dom';
+import store from './store/store';
+import { history } from './store/history';
 
-function App() {
+const App = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Provider store={store}>
+      <div>
+        <h1>Search and Browse</h1>
+        <Router history={history}>
+          <SearchBar props={props}/>
+          <Switch>
+            <Route exact path="/products" component={Results}/>
+            <Route 
+              path="/products/:id" 
+              render={({match}) => (
+                <Product match={match}/>
+              )}/>
+          </Switch>
+        </Router>
+      </div>
+    </Provider>
+  )
 }
 
 export default App;
