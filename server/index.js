@@ -19,7 +19,6 @@ app.get('/products/:category/:query', (req, res, next) => {
     if (category === 'all') {
       const itemResponse = [];
       for (let category in response.categories) {
-        console.log(category)
         for (let i = 0; i < response.categories[category].length; i++) {
           itemResponse.push(response.categories[category][i]);
         }
@@ -60,7 +59,6 @@ app.get('/products/:category', (req, res, next) => {
     if (categoryString === 'all') {
       const itemResponse = [];
       for (let category in response.categories) {
-        console.log(category)
         for (let i = 0; i < response.categories[category].length; i++) {
           itemResponse.push(response.categories[category][i]);
         }

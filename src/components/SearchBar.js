@@ -22,7 +22,6 @@ const SearchBar = () => {
             className="form-control search-bar" 
             placeholder="Search"
             onChange={(e) => {
-              console.log(e.target.value)
               setInputText(e.target.value);
             }}
             value={inputText}
@@ -31,7 +30,6 @@ const SearchBar = () => {
         <select 
           className="dropdown"
           onChange={(e) => {
-            console.log(e.target.value)
             setCategory(e.target.value)
           }}
           value={category}
